@@ -14,20 +14,22 @@ body {
 	font-size: 90%;
 }
 
-header, section {
+header, section, footer {
 	margin: 15px;
 	box-shadow: 0px 0px 10px #000;
 }
 
-header h1, header a, section h2, section nav a {
+header h1, header a,
+section h2, section nav a,
+footer h1, footer a {
 	background: #fff;
 }
 
-header h1 {
+header h1, footer h1 {
 	text-align: center;
 }
 
-header h1, section h2 {
+header h1, section h2, footer h1 {
 	background: #98ccfe;
 	background: -moz-linear-gradient(top, #98ccfe 0%, #5c8cbc 100%);
 	background: -webkit-gradient(linear, left top, left bottom, color-stop(0%,#98ccfe), color-stop(100%,#5c8cbc));
@@ -38,7 +40,7 @@ header h1, section h2 {
 	filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#98ccfe', endColorstr='#5c8cbc',GradientType=0 );
 }
 
-header h1, section h2 {
+header h1, section h2, footer h1 {
 	height: 46px;
 	margin: 0;
 	padding-left: 10px;
@@ -50,7 +52,7 @@ header h1, section h2 {
 	font-size: 110%;
 }
 
-header nav a, section nav a {
+header nav a, section nav a, footer nav a {
 	display: block;
 	height: 44px;
 	padding-left: 14px;
@@ -63,16 +65,16 @@ header nav a, section nav a {
 	background: #eee;
 }
 
-header nav a:first-child, section nav a:first-child {
+header nav a:first-child, section nav a:first-child, footer nav a:first-child {
 	border-top: 0px;
 	height: 43px;
 }
 
-header nav a span:hover, section nav a span:hover {
+header nav a span:hover, section nav a span:hover, footer nav a span:hover {
 	text-decoration: underline;
 }
 
-header nav a:hover, section a:hover {
+header nav a:hover, section a:hover, footer nav a:hover {
 	background: #ddd;
 }
 
