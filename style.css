@@ -12,6 +12,8 @@ body {
 
 	font-family: "Helvetica Neue", HelveticaNeue, "Helvetica-Neue", Helvetica, "BBAlpha Sans", sans-serif;
 	font-size: 90%;
+	
+	max-width: 900px;
 }
 
 header, section, footer {
@@ -52,7 +54,7 @@ header h1, section h2, footer h1, footer h3 {
 	font-size: 110%;
 }
 
-header nav a, section nav a, footer nav a {
+header nav > a, section nav > a, footer nav > a, section nav > .pagerNav {
 	display: block;
 	height: 44px;
 	padding-left: 14px;
@@ -65,10 +67,10 @@ header nav a, section nav a, footer nav a {
 	background: #eee;
 }
 
-header nav a:first-child, section nav a:first-child, footer nav a:first-child {
-	border-top: 0px;
-	height: 43px;
-}
+	header nav a:first-child, section nav a:first-child, footer nav a:first-child {
+		border-top: 0px;
+		height: 43px;
+	}
 
 header nav a span:hover, section nav a span:hover, footer nav a span:hover {
 	text-decoration: underline;
@@ -77,6 +79,38 @@ header nav a span:hover, section nav a span:hover, footer nav a span:hover {
 header nav a:hover, section a:hover, footer nav a:hover {
 	background: #ddd;
 }
+
+section nav .pager {
+	
+	display: inline-block;
+
+	border: 1px solid #000;
+	
+	line-height: normal;
+
+	background: #def;
+	border-radius: 3px;
+	
+	padding: 4px;
+	
+	
+	color: black;
+	text-decoration: none;
+	
+}
+
+	section nav a.pager:hover {
+		
+		background-color: #B9D0E8;
+		
+	}
+	
+	section nav > .pagerNav a:first-child {
+		
+		border-top: 1px solid black !important;
+		height: auto !important;
+		
+	}
 
 section nav a div {
 	display: inline-block;
@@ -90,13 +124,23 @@ section nav a div {
 	margin-right: 14px;
 }
 
-section nav a.child {
+	section nav a.child {
+		
+		padding-left: 43px;
+		
+	}
 	
-	padding-left: 43px;
+	section nav a div.new {
+		background: #9cf;
+		box-shadow: 0px 0px 4px #69c;
+	}
 	
-}
-
-section nav a div.new {
-	background: #9cf;
-	box-shadow: 0px 0px 4px #69c;
-}
+footer.advertisement {
+	
+	text-align: center;
+	height: 50px;
+	width: 320px;
+	
+	margin: auto;
+	
+}	
