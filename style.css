@@ -21,15 +21,15 @@ header, section, footer {
 
 header h1, header a,
 section h2, section nav a,
-footer h1, footer a {
+footer h1, footer a, footer h3 {
 	background: #fff;
 }
 
-header h1, footer h1 {
+header h1, footer h1, footer h3 {
 	text-align: center;
 }
 
-header h1, section h2, footer h1 {
+header h1, section h2, footer h1, footer h3 {
 	background: #98ccfe;
 	background: -moz-linear-gradient(top, #98ccfe 0%, #5c8cbc 100%);
 	background: -webkit-gradient(linear, left top, left bottom, color-stop(0%,#98ccfe), color-stop(100%,#5c8cbc));
@@ -40,7 +40,7 @@ header h1, section h2, footer h1 {
 	filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#98ccfe', endColorstr='#5c8cbc',GradientType=0 );
 }
 
-header h1, section h2, footer h1 {
+header h1, section h2, footer h1, footer h3 {
 	height: 46px;
 	margin: 0;
 	padding-left: 10px;
