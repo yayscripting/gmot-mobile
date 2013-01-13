@@ -40,5 +40,16 @@
         <a href=""><div class="new"></div><span>Games</span></a>
       </nav>
     </section>
+    <footer class="advertisement">
+        <script type="text/javascript">
+	<!--
+	google_ad_client = "ca-pub-2886638312030605";
+	google_ad_slot = "1867272517";
+	google_ad_width = 468;
+	google_ad_height = 60;
+	//-->
+	</script>
+	<script type="text/javascript" src="http://pagead2.googlesyndication.com/pagead/show_ads.js"></script>
+    </footer>
   </body>
 </html>
