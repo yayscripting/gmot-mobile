@@ -2,6 +2,8 @@
 	        box-sizing: border-box;
 	   -moz-box-sizing: border-box;
 	-webkit-box-sizing: border-box;
+	
+	font-family: verdana, sans-serif;
 }
 
 body {
@@ -19,13 +21,14 @@ body {
 header, section, footer {
 	margin: 15px;
 	box-shadow: 0px 0px 10px #000;
+	-webkit-box-shadow: 0px 0px 10px #000;
 	
 	overflow: hidden;
 }
 
-header h1, header a,
+header h1, header nav a,
 section h2, section nav a,
-footer h1, footer a, footer h3 {
+footer h1, footer nav a, footer h3 {
 	background: #fff;
 }
 
@@ -59,18 +62,24 @@ header h1, section h2, footer h1, footer h3 {
 	
 }
 
+	header h1 a img, section h2 a img, footer h1 a img , footer h3 a img {
+		
+		vertical-align: text-bottom;
+		
+	}
+
 	section h2 {
 		
 		width: 1000px;
 		
 	}
 
-header nav, section nav, footer nav, section article, header article {
+header nav, section nav, footer nav, section article, header article, footer article {
 	
 	overflow: hidden;	
 }
 
-	header nav > a, section nav > a, footer nav > a, section nav > .pagerNav, footer nav > .pagerNav, header nav > .pagerNav, section article > div, header article > div {
+	header nav > a, section nav > a, footer nav > a, section nav > .pagerNav, footer nav > .pagerNav, header nav > .pagerNav, section article > div, header article > div, footer article > div {
 		display: block;
 		height: 44px;
 		padding-left: 14px;
@@ -86,7 +95,13 @@ header nav, section nav, footer nav, section article, header article {
 		
 	}
 	
-		section article > div.message, header article > div.message {
+		.autoWidth {
+			
+			width: auto; padding-right: 14px;
+			
+		}
+	
+		section article > div.message, header article > div.message, footer article > div.message {
 			
 			line-height: normal;
 			height: auto;
@@ -96,6 +111,25 @@ header nav, section nav, footer nav, section article, header article {
 			width: auto;
 			
 			background: white;
+			
+		}
+		
+			section article > div.message img, header article > div.message img, footer article > div.message img {
+				
+				max-width: 100%;
+				
+			}
+			
+			
+			section article > div.message a, header article > div.message a, footer article > div.message a {
+			
+				color: #336699;				
+				
+			}
+		
+		section article > div.error, header article > div.error, footer article > div.error {
+			
+			background-color: #F2CECD;
 			
 		}
 	
@@ -116,10 +150,11 @@ header nav a span:hover, section nav a span:hover, footer nav a span:hover {
 	text-decoration: underline;
 }
 
-header nav a:hover, section a:hover, footer nav a:hover {
+header nav a:hover, section nav a:hover, footer nav a:hover {
 	background: #ddd;
 }
 
+/*
 section nav .pager, footer nav .pager, header nav .pager {
 	
 	display: inline-block;
@@ -139,6 +174,37 @@ section nav .pager, footer nav .pager, header nav .pager {
 	
 }
 
+*/
+section nav .pager, footer nav .pager, header nav .pager {
+
+	display: inline-block;
+	line-height: normal;
+	background: rgb(255, 255, 255);
+	border-radius: 3px;
+	padding: 4px;
+	color: black;
+	text-decoration: none;
+	box-shadow: 0px 0px 3px #000;
+	-webkit-box-shadow: 0px 0px 3px #000;
+	
+}
+
+	section nav .pagerText, footer nav .pagerText, header nav .pagerText {
+		
+		
+		display: inline-block;
+				
+		line-height: normal;
+		
+		padding: 4px;
+		
+		
+		color: black;
+		text-decoration: none;
+		
+	}
+	
+
 	footer nav .pagerNav, header nav .pagerNav {
 		
 		text-align: center;
@@ -146,7 +212,7 @@ section nav .pager, footer nav .pager, header nav .pager {
 		
 	}
 
-	section nav a.pager:hover, footer nav a.pager:hover, header nav a.pger:hover {
+	section nav a.pager:hover, footer nav a.pager:hover, header nav a.pager:hover {
 		
 		background-color: #B9D0E8;
 		
@@ -154,7 +220,7 @@ section nav .pager, footer nav .pager, header nav .pager {
 	
 	section nav > .pagerNav a:first-child, footer nav > .pagerNav a:first-child, header nav > a.pgerNav a:first-child {
 		
-		border-top: 1px solid black !important;
+		/*border-top: 1px solid black !important;*/
 		height: auto !important;
 		
 	}
@@ -180,6 +246,7 @@ section nav a div, section nav a > a:first-child {
 	section nav a div.new {
 		background: #9cf;
 		box-shadow: 0px 0px 4px #69c;
+		-webkit-box-shadow: 0px 0px 4px #69c;
 	}
 	
 footer.advertisement {
@@ -199,6 +266,7 @@ footer.copyright {
 	
 	border: 0;
 	box-shadow: none;
+	-webkit-box-shadow: none;
 	
 }	
 
@@ -208,3 +276,76 @@ footer.copyright {
 		color: black;
 		
 	}
+	
+form input[type="submit"] {
+	
+	/*
+	padding: 4px;
+	
+	width: 100%;
+	
+	border: 1px solid black;
+	border-radius: 3px;
+	background: #DDEEFF;
+	
+	box-shadow: none;
+	
+	-webkit-box-shadow: none;
+	*/
+	
+	-webkit-appearance:none;
+	
+	
+	display: inline-block;
+	line-height: normal;
+	background: rgb(255, 255, 255);
+	border-radius: 3px;
+	padding: 4px;
+	color: black;
+	text-decoration: none;
+	box-shadow: 0px 0px 3px #000;
+	-webkit-box-shadow: 0px 0px 3px #000;
+	
+	
+	border: 0;
+	
+	width: 100%;
+	
+}
+
+	form input[type="submit"]:hover {
+		
+		background-color: #B9D0E8;	
+		
+	}
+	
+form input, textarea {
+	
+	font-size: 14px;
+	
+}
+	
+div.quoteheader, div.codeheader {
+	
+	font-size: 11px;
+	font-weight: bold;
+	
+	line-height: 20px;
+	
+	
+}
+	
+div.quote, div.code, div.phpcode {
+    border: 1px dashed black;
+    padding: 7px;
+}
+
+	div.code, div.phpcode {
+	
+		background-color: #e4e4e4;
+		overflow: auto;
+		
+		max-height: 400px;
+		
+	}
+	
