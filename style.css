@@ -19,6 +19,8 @@ body {
 header, section, footer {
 	margin: 15px;
 	box-shadow: 0px 0px 10px #000;
+	
+	overflow: hidden;
 }
 
 header h1, header a,
@@ -40,6 +42,8 @@ header h1, section h2, footer h1, footer h3 {
 	background: -ms-linear-gradient(top, #98ccfe 0%,#5c8cbc 100%);
 	background: linear-gradient(top, #98ccfe 0%,#5c8cbc 100%);
 	filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#98ccfe', endColorstr='#5c8cbc',GradientType=0 );
+	
+	overflow: hidden;
 }
 
 header h1, section h2, footer h1, footer h3 {
@@ -52,25 +56,61 @@ header h1, section h2, footer h1, footer h3 {
 	text-shadow: 1px 1px 3px #000;
 
 	font-size: 110%;
+	
 }
 
-header nav > a, section nav > a, footer nav > a, section nav > .pagerNav {
-	display: block;
-	height: 44px;
-	padding-left: 14px;
-	border-top: 1px solid #ccc;
-
-	line-height: 44px;
-	color: #222;
-	text-decoration: none;
-
-	background: #eee;
-}
-
-	header nav a:first-child, section nav a:first-child, footer nav a:first-child {
-		border-top: 0px;
-		height: 43px;
+	section h2 {
+		
+		width: 1000px;
+		
 	}
+
+header nav, section nav, footer nav, section article, header article {
+	
+	overflow: hidden;	
+}
+
+	header nav > a, section nav > a, footer nav > a, section nav > .pagerNav, footer nav > .pagerNav, header nav > .pagerNav, section article > div, header article > div {
+		display: block;
+		height: 44px;
+		padding-left: 14px;
+		border-top: 1px solid #ccc;
+	
+		line-height: 44px;
+		color: #222;
+		text-decoration: none;
+	
+		background: #eee;
+		
+		width: 1000px;
+		
+	}
+	
+		section article > div.message, header article > div.message {
+			
+			line-height: normal;
+			height: auto;
+			
+			padding: 14px;
+			
+			width: auto;
+			
+			background: white;
+			
+		}
+	
+		header nav > a:first-child, section nav > a:first-child, footer nav > a:first-child {
+			border-top: 0px;
+			height: 43px;
+		}
+		
+		/*
+		header nav > a > *, section nav > a > *, footer nav > a > *, section nav > .pagerNav > * {
+			
+			white-space: nowrap;
+			
+		}
+		*/
 
 header nav a span:hover, section nav a span:hover, footer nav a span:hover {
 	text-decoration: underline;
@@ -80,7 +120,7 @@ header nav a:hover, section a:hover, footer nav a:hover {
 	background: #ddd;
 }
 
-section nav .pager {
+section nav .pager, footer nav .pager, header nav .pager {
 	
 	display: inline-block;
 
@@ -99,20 +139,27 @@ section nav .pager {
 	
 }
 
-	section nav a.pager:hover {
+	footer nav .pagerNav, header nav .pagerNav {
+		
+		text-align: center;
+		width: auto;
+		
+	}
+
+	section nav a.pager:hover, footer nav a.pager:hover, header nav a.pger:hover {
 		
 		background-color: #B9D0E8;
 		
 	}
 	
-	section nav > .pagerNav a:first-child {
+	section nav > .pagerNav a:first-child, footer nav > .pagerNav a:first-child, header nav > a.pgerNav a:first-child {
 		
 		border-top: 1px solid black !important;
 		height: auto !important;
 		
 	}
 
-section nav a div {
+section nav a div, section nav a > a:first-child {
 	display: inline-block;
 	width: 15px;
 	height: 15px;
@@ -143,4 +190,21 @@ footer.advertisement {
 	
 	margin: auto;
 	
+}
+
+footer.copyright {
+	
+	text-align: center;	
+	font-size: 10px;
+	
+	border: 0;
+	box-shadow: none;
+	
 }	
+
+	footer.copyright a {
+		
+		background: none;
+		color: black;
+		
+	}
